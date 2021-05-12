@@ -129,3 +129,5 @@ C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\bin\Debug\netcore
 C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Walkers\Index.cshtml.g.cs
 C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Walkers\Details.cshtml.g.cs
+C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Index.cshtml.g.cs
+C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Details.cshtml.g.cs
