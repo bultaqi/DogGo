@@ -420,3 +420,4 @@ C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcore
 C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Create.cshtml.g.cs
 C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Delete.cshtml.g.cs
 C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Owners\Edit.cshtml.g.cs
+C:\Users\User-39\workspace\NewForce-C4\Server-Side\DogGo\DogGo\obj\Debug\netcoreapp3.1\Razor\Views\Dog\Index.cshtml.g.cs

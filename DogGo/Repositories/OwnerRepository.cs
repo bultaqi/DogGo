@@ -80,6 +80,7 @@ namespace DogGo.Repositories
 
                     if (reader.Read())
                     {
+                        // Reads data from the SQL command and stores it in a new instance of type Owner
                         Owner owner = new Owner()
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
@@ -91,6 +92,7 @@ namespace DogGo.Repositories
                         };
 
                         reader.Close();
+                        // return it the controller
                         return owner;
                     }
 
