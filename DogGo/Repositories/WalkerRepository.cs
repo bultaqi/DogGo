@@ -114,6 +114,8 @@ namespace DogGo.Repositories
 
                     SqlDataReader reader = cmd.ExecuteReader();
 
+
+                    // Creating a list of walkers who live in the neighborhood
                     List<Walker> walkers = new List<Walker>();
                     while (reader.Read())
                     {
