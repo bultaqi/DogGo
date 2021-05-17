@@ -37,14 +37,23 @@ namespace DogGo.Controllers
 
         // GET: Owners/Details/5
 
+        // When a user goes to the details page of an individual owner 
         public ActionResult Details(int id)
-        {   // Get owner data passing in id from the URL parmater
+
+        {   // Get owner data from OwnerRepository
+            // Store in owner
             Owner owner = _ownerRepo.GetOwnerById(id);
 
-            // Get all the dogs that belong to the owner
+            // Get all the dogs that belong to the owner from DogRepository
+            // Store in dogs
             List<Dog> dogs = _dogRepo.GetDogsByOwnerId(owner.Id);
+
+            // Create a list of walkers in the neighborhood of the owner
+            // Store in walkers
             List<Walker> walkers = _walkerRepo.GetWalkersInNeighborhood(owner.NeighborhoodId);
 
+            // a new object of ProfileViewModels is instantiated 
+            // Data collected from the methods above are matched with the properties in ProfileViewModels
             ProfileViewModel vm = new ProfileViewModel()
             {
                 Owner = owner,
@@ -52,6 +61,8 @@ namespace DogGo.Controllers
                 Walkers = walkers
             };
 
+            // passing one big package or object as a param into View
+            // Returning all the parsed data that was built in View to the user
             return View(vm);
         }
 

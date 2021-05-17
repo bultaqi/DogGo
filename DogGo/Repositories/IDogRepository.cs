@@ -11,6 +11,8 @@ namespace DogGo.Repositories
 
         List<Dog> GetDogsByOwnerId(int ownerId);
 
+        List<Dog> GetAllDogs();
+
 
     }
 }
