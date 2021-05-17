@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace DogGo.Controllers
@@ -25,14 +26,16 @@ namespace DogGo.Controllers
 
         // GET: DogController
         public ActionResult Index()
-            {
-                List<Dog> dogs = _dogRepo.GetAllDogs();
+        {
+            int ownerId = GetCurrentUserId();
 
-                return View(dogs);
-            }
+            List<Dog> dogs = _dogRepo.GetDogsByOwnerId(ownerId);
 
-            // GET: DogController/Details/5
-            public ActionResult Details(int id)
+            return View(dogs);
+        }
+
+        // GET: DogController/Details/5
+        public ActionResult Details(int id)
             {
                 return View();
             }
@@ -99,7 +102,16 @@ namespace DogGo.Controllers
                     return View();
                 }
             }
+
+
+        private int GetCurrentUserId()
+        {
+            string id = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return int.Parse(id);
         }
+
+
+    }
 
 
  }

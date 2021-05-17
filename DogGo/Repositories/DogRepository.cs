@@ -88,7 +88,7 @@ namespace DogGo.Repositories
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"
-                SELECT Id, Name, Breed, Notes, ImageUrl, OwnerId 
+                SELECT Id, [Name], Breed, Notes, ImageUrl, OwnerId 
                 FROM Dog
                 WHERE OwnerId = @ownerId
                 ";
@@ -121,9 +121,9 @@ namespace DogGo.Repositories
                             }
 
                             // Add those that match the command to the list
-                            dogs.Add(dog);
+                            
                         }
-
+                        dogs.Add(dog);
                     }
                     reader.Close();
                     return dogs;
